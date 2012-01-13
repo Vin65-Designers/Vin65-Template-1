@@ -1,0 +1,47 @@
+/*Defaults*/
+body { background-color: #fff; font-size: 12px; color: #666666; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height: 1.5em; }
+
+/* CSS Reset */
+img { border: 0; } 
+h1,h2,h3,h4,h5,h6,p,table,ul,ol { margin-top: 0; padding-top: 0; }
+
+ul, ol, dl, p, table, pre { margin-bottom: 1em; }
+	
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #333; font-family: "Times New Roman", Times, serif; margin: 0; }
+	h1 { font-size: 32px; line-height: 1.2; margin-bottom: 0.6em; }
+	h2 { font-size: 26px; line-height: 1.2; margin-bottom: 0.5em; margin-top: 0.25em; }
+	h3 { font-size: 22px; line-height: 1.2; margin-bottom: 0.6em; }
+	h4 { font-size: 18px; line-height: 1.2; }
+	h5 { font-size: 14px; line-height: 1.5; }
+	h6 { font-size: 14px; line-height: 1.5; }
+
+a { text-decoration: none; color: #900; }
+a:hover, a:focus, a:active { text-decoration: underline; }
+
+ul, ol, dd, blockquote {  }
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+form { margin-bottom: 1em; }
+legend { color: #111; }
+hr { color: #666; background-color: #666; height: 1px; border: 0; }
+/* Standard V65 Styles - don't remove */
+
+/* Images */
+img.v65-featureRight { border: 1px solid #ccc; float: right; padding: 3px; margin: 0 0 1em 1em; }
+img.v65-right { float: right; padding: 0; margin: 0 0 1em 1em; }
+
+img.v65-featureLeft { border: 1px solid #ccc; float: left; padding: 3px; margin: 0 1em 1em 0; }
+img.v65-left { float: left; padding: 0; margin: 0 1em 1em 0; }
+
+img.v65-border { border: 1px solid #ccc; padding: 3px; }
+
+/*Pull Quotes*/
+.v65-quoteRight { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: right; padding: 0.65em; margin: 0 0 1em 1em; }
+	.v65-quoteRight:first-letter { display:block; float: left; margin: 4px 8px 0 0; font-size: 3.2em; }
+.v65-quoteLeft { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: left; padding: 0.65em; margin: 0 1em 1em 0; }
+	.v65-quoteLeft:first-letter { display:block; float: left; margin: 4px 8px 0 0; font-size: 3.2em; }	
+
+/*Other*/
+.small 			{ font-size: 0.917em; }
+	.small a 	{ font-weight: bold; }
+.smaller 			{ font-size: 0.834em; }
+	.smaller a 	{ font-weight: bold; }

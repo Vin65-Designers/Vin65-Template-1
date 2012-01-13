@@ -1,0 +1,32 @@
+<style>
+p {font: 12px Tahoma, Geneva, sans-serif; }
+td {font: 12px Tahoma, Geneva, sans-serif;}
+</style>
+
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="700" height="130"><img src="/assets/images/email/header.gif" alt="Company Name" width="700" height="120" /></td>
+	</tr>
+	<tr>
+		<td><table width="600" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 10px;">&nbsp;</td>
+				<td>//ContentPlaceHolder//</td>
+				<td style="width: 10px;">&nbsp;</td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr>
+		<td width="700" height="100"><img src="/assets/images/email/footer.gif" alt="" width="700" height="60" /></td>
+	</tr>
+	<tr>
+		<td width="700"><p style="font-size: 9px;">If you received this email and did not subscribe you can unsubscribe by <a href="/unsubscribe">clicking here</a>. <br />
+			If you want to update your email preferences <a href="/unsubscribe">click here</a>.</p>
+		<p style="font-size: 10px;">
+			Company Name<br />
+			Street Address<br />
+			City, CA 9451</p>
+		<p style="font-size: 10px;">p: 707. <br>
+		f: 707</p></td>
+	</tr>
+</table>

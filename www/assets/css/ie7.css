@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* -------------------------------------------------------------- 
+   
+   ie7.css
+   Contains every hack for Internet Explorer 7.
+   
+-------------------------------------------------------------- */
+
+
+/* Forms 
+-------------------------------------------------------------- */
+.v65-form textarea  							{ width: 218px; } /* -7 than normal*/
+.v65-form fieldset div.formatBeside textarea	{ width: 148px; } /* -7 than normal*/

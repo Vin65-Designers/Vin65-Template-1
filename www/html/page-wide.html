@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+	<meta charset="utf-8">
+	
+	<title></title>
+	<meta name="description"></meta>
+	
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+	
+	<link rel="stylesheet" href="http://assetss3.vin65.com/css/vin65.css" type="text/css">
+	<script src="http://assetss3.vin65.com/js/vin65.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="/assets/css/screen.css">
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" href="/assets/css/ie6.css"><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/assets/css/ie7.css"><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"><![endif]-->
+	
+	<script src="/assets/js/swfobject.js"></script>
+	<script src="/assets/js/scripts.js"></script>
+	
+</head>
+<body>
+
+<div id="container">
+
+	<!---Header--->
+	<div id="header">
+		
+		<!---Logo--->
+		<div id="logo"><a href="/" accesskey="h"><img src="/assets/images/logo.png" width="240" height="160" alt="Template 1"></a></div>
+		<!---/Logo--->
+		
+		<!---Menu--->
+		<div id="topMenu">
+			<ul>
+				<li><a href="link">Home</a></li>
+				<li><a href="link">Wine</a>
+					<ul>
+						<li><a href="link">Red Wine</a></li>
+						<li><a href="link">White Wine</a></li>
+						<li><a href="link">Sparkling Wine</a></li>
+					</ul>
+				</li>
+				<li><a href="link">Wine Club</a></li>
+				<li><a href="link">Events</a></li>
+				<li><a href="link">About Us</a></li>
+				<li><a href="link">Contact Us</a></li>
+			</ul>
+		</div>
+		<!---/Menu--->
+		
+		<!---User Tools--->
+		<div id="user-toolsWrapper">
+			<div id="user-tools">
+				
+				
+				<div id="v65-modalCart">
+					<a href="javascript:vin65.cart.toggleCart();" id="v65-toggleModalCart">Cart <strong>0</strong> items: <strong>$0.00</strong></a>
+			
+					<div id="v65-modalCartDropdown">
+						<div id="v65-modalCartBody">
+							<p class="right"><a href="javascript:vin65.cart.hideCart();" class="modalLinkAltBtn"><span>close</span></a></p>
+			
+							<div id="itemAddedText" style="display:none;"><p class="alertYellow">Item was successfully added to your cart</p></div>
+			
+							<table border="0" cellspacing="0" cellpadding="0" id="v65-modalCartTable">
+			
+								<tr>
+									<th>Qty</th>
+									<th>Item</th>
+									<th>Description</th>
+									<th style="text-align: right;">Price</th>
+									<th style="text-align: right;">Total</th>
+								</tr>
+			
+								<!---Cart Subtotal--->
+								<tr id="v65-modalCartTableSubtotal">
+				
+									<td colspan="3">&nbsp;</td>
+									<td class="right">Subtotal:</td>
+									<td class="right">$0.00</td>
+								</tr>
+								<!---/Cart Subtotal--->
+							
+							</table>
+			
+							<p class="right"><a href="/index.cfm?method=cart.showCart" class="modalLinkAltBtn"><span>View Cart</span></a></p>
+							
+						</div>
+						
+						<div id="v65-modalCartFooter">&nbsp;</div>
+					
+					</div>
+				
+				</div>
+				
+				
+				<a href="#application.self#?method=memberEditAccount.editProfile" class="v65-modalLoginLink">Your Account</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#application.self#?method=memberEditAccount.editProfile" class="v65-modalLoginLink">Log In</a>
+				
+			
+			</div>
+			
+		</div>
+		<!---User Tools--->
+		
+	</div>
+	<!---/Header--->
+	
+	<!---Content--->
+	<div id="content">
+		
+		<h1>Shopping Cart</h1>
+		<p>Please review the contents of your cart. When you have finished please proceed to the check out.</p>
+		<hr class="dotted" style="clear:both;" />
+		
+		
+		<div id="v65-cartHeader">
+			
+			<div id="v65-cartCheckOutCoupons">
+				<form method="post" action="/index.cfm?method=cart.addCouponToCart" class="v65-form">
+						
+					<fieldset>  
+						<legend>Have a coupon code?</legend>
+			
+						<div>
+							<input type="text" name="CouponCode" id="v65-CouponCode" value="" style="width: 100px;" />&nbsp;&nbsp;&nbsp;<button type="submit" value="submit" class="modalBtn"><span>Apply Coupon</span></button> 
+						</div>
+						 
+					</fieldset> 	
+				
+				</form>
+			</div>
+			
+			<div class="v65-cartCheckOutButtons">
+				<a href="/index.cfm?method=pages.showPage&pageID=7f4e98f1-a720-8e65-25d4-3525a9942647" class="linkAltBtn"><span>Keep Shopping</span></a>&nbsp;&nbsp;&nbsp;
+				<a href="/index.cfm?method=checkout.billing" class="largeLinkBtn"><span>Proceed To Checkout</span></a>	
+			</div>
+			<div class="v65-clear">&nbsp;</div> 
+			
+		</div>
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" id="v65-cartTable">
+
+			<tr>
+				<th class="v65-cartItemAmount">Quantity</th>
+				<th colspan="2">Item Description</th>
+				<th class="center">Availability</th>
+				<th class="right">Price</th>
+				<th class="right">Total</th>
+			</tr>
+			
+			<tr class="v65-cartItem">
+				<td class="v65-cartItemAmount">
+					<form method="post" action="/index.cfm?method=cart.updateQuantity">
+						<fieldset>
+							<input type="hidden" name="productSKU" value="2008 Chardonnnay" />
+							<input type="text" value="1" name="quantity" class="v65-qtyField" /><br />
+							<button type="submit" value="submit" class="modalBtn"><span>Update Item</span></button>
+		
+						</fieldset>
+					</form>
+				</td>
+				<td class="v65-cartItemImage"><a href="/index.cfm?method=products.ProductDrilldown&productid=3748479c-1e0b-4e34-f029-0234bb23025b" data-sku="2008 Chardonnnay"><img src="/assets/images/products/cart/white1.jpg" alt="2008 Chard" border="0" /></a></td>
+				<td class="v65-cartItemDescription">
+					<a href="/index.cfm?method=products.ProductDrilldown&productid=3748479c-1e0b-4e34-f029-0234bb23025b" data-sku="2008 Chardonnnay"><strong>2008 Chardonnnay</strong></a><br />
+		
+					Bottle<span class="small"> - SKU 2008 Chardonnnay</span><br />
+					
+					<a href="/index.cfm?method=cart.removeItem&productSKU=2008%20Chardonnnay" class="modalLinkAltBtn v65-cartRemoveButton"><span>Remove Item</span></a>
+				</td>
+				<td class="center">In Stock</td>
+				<td class="right">
+					$14.00 		
+				</td>
+		
+				<td class="right">$14.00</td>
+			</tr>
+			<tr id="v65-cartSubtotal">
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="bold red">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="right">SubTotal</td>
+				<td class="right">$14.00</td>
+			</tr>
+			
+			<!--Shipping-->
+			<tr class="v65-cartTax">
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+	
+				<td class="right">
+					Shipping
+					<form action="/index.cfm?method=cart.changeShippingState" method="post"  style="display:inline;">
+					<select name="StateCode" id="v65-cartStateCode" onchange="this.form.submit();">
+						<option value="CA" >CA</option>
+					</select>
+					</form>
+				</td>
+				<td class="right">---</td>
+			</tr>
+			<!--/Shipping-->
+			<!--Cart Total-->
+			<tr id="v65-cartTotal">
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+	
+				<td>&nbsp;</td>
+				<td class="right">Total</td>
+				<td class="right">$14.00</td>
+			</tr>
+			<!--/Cart Total-->
+			
+		</table>
+		<!--/Cart-->
+		
+		
+		<div id="v65-cartFooter">
+			
+			
+			<div id="v65-cartPaymentOptions">
+				<img src="http://assetss3.vin65.com/images/checkout/Visa.gif" alt="Visa" />
+				<img src="http://assetss3.vin65.com/images/checkout/MasterCard.gif" alt="MasterCard" />
+				<img src="http://assetss3.vin65.com/images/checkout/AmericanExpress.gif" alt="AmericanExpress" />
+			</div>
+			
+			<div class="v65-cartCheckOutButtons">
+				<a href="/index.cfm?method=pages.showPage&pageID=7f4e98f1-a720-8e65-25d4-3525a9942647" class="linkAltBtn"><span>Keep Shopping</span></a>&nbsp;&nbsp;&nbsp;
+				<a href="/index.cfm?method=checkout.billing" class="largeLinkBtn"><span>Proceed To Checkout</span></a>	
+			</div>
+			
+			<div class="v65-clear">&nbsp;</div> 
+			
+		</div>
+		
+	</div>
+	<!---/Content--->
+	
+	<!---Footer--->
+	<div id="footer">
+		<div id="footerLegal">
+			<ul>
+				<li><a href="link">Contact Us</a></li>
+				<li><a href="link">Terms Of Use</a></li>
+				<li><a href="link">Privacy Policy</a></li>
+				<li><a href="link">Returns & Cancellations</a></li>
+			</ul>
+			<p>&copy; 2010 Generic. All rights reserved.</p>
+		</div>
+		<div id="footerAuthor">
+			<p><a href="http://www.vin65.com">Winery Ecommerce by Vin | 65</a></p>
+		</div>
+	</div>
+	<!---/Footer--->
+	
+</div>
+
+<!---Analytics---->
+<!---/Analytics---->
+
+</body>
+</html>

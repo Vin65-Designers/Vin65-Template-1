@@ -1,0 +1,665 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+/* ====================================================================================================                                                                
+
+	Table of Content
+
+	
+
+	1. General
+
+	2. Defaults - Copy into admin.css
+
+	3. Header
+
+	4. Navigation
+
+	5. Content
+
+	6. Blog Template
+
+	7. Print Template
+
+	8. Buttons
+
+	9. Footer
+
+   10. Clear Fix	
+
+   11. Vin65 Overrides
+
+   
+
+*/
+
+
+
+/*   ===================================================================================================                                                                
+
+     1. General
+
+======================================================================================================== */
+
+html, body { 
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+ 	width: 100%;
+	}
+
+#user-toolsWrapper { 
+	float: right;
+	font-size: 11px;
+	margin: 0 20px 0 0;
+	position: relative;
+	width: 300px;
+	z-index: 100;
+	}
+
+	#user-tools { 
+		height: 24px;
+		line-height: 24px;
+		}
+
+	#user-tools a { 
+		color: #111;
+		}
+
+/*   ===================================================================================================                                                                
+
+     2. Defaults - These get copied into the admin.css
+
+======================================================================================================== */
+
+body { 
+	background-color: #fff;
+	font-size: 12px;
+	color: #666666;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 1.5em;
+	}
+
+/* CSS Reset */
+img { 
+	border: 0;
+	} 
+	
+h1,h2,h3,h4,h5,h6,p,table,ul,ol { 
+	margin-top: 0;
+	padding-top: 0;
+	}
+
+ul, ol, dl, p, table, pre { 
+	margin-bottom: 1em;
+	}
+	
+h1,h2,h3,h4,h5,h6 { 
+	color: #333;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+	h1 { 
+		font-size: 32px;
+		line-height: 1.2;
+		margin-bottom: 0.6em;
+		}
+	
+	h2 { 
+		font-size: 26px;
+		line-height: 1.2;
+		margin: 0.25em  0 0.5em;
+		}
+		
+	h3 { 
+		font-size: 22px;
+		line-height: 1.2;
+		margin-bottom: 0.6em;
+		}
+		
+	h4 { 
+		font-size: 18px;
+		line-height: 1.2;
+		}
+		
+	h5 { 
+		font-size: 14px;
+		line-height: 1.5;
+		}
+	
+	h6 { 
+		font-size: 14px;
+		line-height: 1.5;
+		}
+
+a { 
+	color: #900;
+	text-decoration: none;
+	}
+	
+a:hover, a:focus, a:active { 
+	text-decoration: underline;
+	}
+
+ul, ol, dd, blockquote {  }
+
+ul ul, ol ol, ul ol, ol ul { 
+	margin-bottom: 0;
+	}
+	
+form { 
+	margin-bottom: 1em;
+	}
+	
+legend { 
+	color: #111;
+	}
+	
+hr { 
+	background-color: #666;
+	border: 0;
+	color: #666;
+	height: 1px;
+	}
+	
+/*   ===================================================================================================                                                                
+
+     3. Header
+
+======================================================================================================== */
+
+#header { 
+	height: 180px;
+	position: relative;
+	width: 950px;
+	z-index: 100;
+	}
+	
+	#logo { 
+		float: left;
+		height: 160px;
+		overflow: hidden;
+		width: 350px;
+		}
+		
+/*   ===================================================================================================                                                                
+
+     4. Navigation
+
+======================================================================================================== */
+
+#topMenu { 
+	float: right;
+	font-size: 13px;
+	height: 24px;
+	margin: 80px 0 30px 0;
+	position: relative;
+	width: 600px;
+	z-index: 101;
+	}
+	
+	#topMenu ul { 
+		padding: 0;
+		position: relative;
+		list-style: none;
+		margin: 0;
+		}
+
+	#topMenu ul li { 
+		float: left;
+		margin: 0 55px 0 0;
+		padding: 0;
+		position: relative;
+		}
+			
+	#topMenu ul li a { 
+		color: #333;
+		display: inline-block;
+		height: 32px;
+		line-height: 32px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		text-decoration: none;
+		}
+		
+#topMenu ul li a:hover { 
+	color: #000;
+	text-decoration: none;
+	}
+	
+	#topMenu li ul { 
+		background-color: #fff;
+		display: none;
+		left: -10px;
+		position: absolute;
+		top: 32px;
+		width: 180px;
+		}
+		
+	#topMenu li:hover ul, #layTopMenu li.over ul { 
+		background-color: #fff;
+		border: 1px solid #ccc;
+		display: block;
+		font-size: 12px;
+		}
+
+		#topMenu li ul li { 
+			background-color: #fff;
+			display: block;
+			float: none;				
+			text-align: left;
+			width: 180px;
+			}		
+
+		#topMenu li ul li a { 
+			background-color: #fff;
+			color: #666;
+			display: block;
+			float: none;
+			height: 28px;
+			line-height: 28px;
+			margin: 0;
+			padding: 0 0 0 10px;
+			text-align: left;
+			text-transform: none;
+			width: 170px;
+			}
+
+		#topMenu li ul li a.v65-pageAParent { 
+			color: #000;
+			}
+			
+		#topMenu li ul li a:hover { 
+			color: #000;	
+			}
+		
+		#topMenu li.v65-home {  } 
+		
+		#topMenu li a.v65-pageAParent { 
+			color: #000;
+			}
+		
+		#topMenu li a.v65-selected { 
+			color: #000;
+			font-weight: bold;
+			}
+
+#leftMenu { 
+	border-right: 1px solid #ccc;
+	float: left;
+	margin: 60px 40px 0 0;
+	padding: 0 20px 0 0;
+	width: 170px;
+	}
+
+	#leftMenu ul { 
+		font-size: 11px;
+		list-style: none;
+		margin: 0 0 1em 10px;
+		padding: 0;
+		width: 170px;			
+		}
+		
+	#leftMenu li { 
+		line-height: 2;
+		}
+	
+	#leftMenu li a {  }
+	
+	#leftMenu li a:hover {  }
+	
+	#leftMenu li ul { 
+		margin-left: 10px;
+		width: 160px;
+		}
+	
+	#leftMenu li a.v65-pageAParent { 
+		color: #000;
+		}
+	
+	#leftMenu li a.v65-leftSelected { 
+		color: #000;
+		font-weight: bold;
+		}
+
+			
+/*   ===================================================================================================                                                                
+
+     5. Content
+
+======================================================================================================== */
+body { 
+	background: #eee;
+	}
+	
+#container { 
+	margin: 0 auto;
+	position: relative;
+	width: 950px;
+	}
+	
+	#homepageContent { 
+		background: #fff;
+		box-shadow: 0 0 20px #999;
+		overflow: hidden;
+		}
+		
+	#slider { 
+		height: 350px;
+		width: 950px;
+		}
+		
+	#content { 
+		background: #fff;
+		box-shadow: 0 0 20px #999;
+		overflow: hidden;
+		padding: 30px;
+		}
+		
+		#homepageText { 
+			float: left;
+			margin: 0 0 20px 0;
+			overflow: hidden;
+			padding: 30px 30px 30px 20px;
+			width: 470px;
+			}
+			
+		#homepagePod { 
+			border-left: 1px solid #ccc;
+			float: left;
+			margin: 85px 0 20px 0;
+			padding: 0 0 30px 20px;
+			width: 400px;		
+			}
+		
+		#pageContent { 
+			float: left;
+			width: 650px;
+			}
+	
+/*   ===================================================================================================                                                                
+
+     6. Blog Template
+
+======================================================================================================== */
+
+#blogContent { 
+	float: left;
+	overflow: hidden;
+	padding: 20px 25px 0 0;
+	width: 520px;
+	}
+
+	#blogRightWrapper { 
+		float: right;
+		overflow: hidden;
+		padding: 20px 0 0 0;
+		width: 325px;
+		}
+
+	#blogRightWrapper ul { 
+		list-style: none;
+		margin: 0 0 1em;
+		padding: 0;
+		}
+
+	#blogRightWrapper ul li { 
+		font-size: 11px;
+		margin: 0 0 0 10px;
+		}
+
+		#blogRightWrapper-Col1 { 
+			float: left;
+			overflow: hidden;
+			padding: 0 25px 0 0;
+			width: 150px;			
+			}
+
+		#blogRightWrapper-Col2 { 
+			float: left;
+			overflow: hidden;
+			padding: 0;
+			width: 150px;		
+			}
+
+/*   ===================================================================================================                                                                
+
+     7. Print Template
+
+======================================================================================================== */
+
+#printBody { 
+	background-color: #FFF;
+	background-image: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+#printWrapper { 
+	margin: 0 auto;
+	width: 700px;
+	}
+	
+	#printHeader { 
+		height: 150px;
+		width: 700px;
+		}
+		
+	#printContent { 
+		text-align: left;
+		width: 700px;
+		}	
+
+/*   ===================================================================================================                                                                
+
+     8. Buttons
+
+======================================================================================================== */
+
+/* OPTIONAL BUTTON STYLES regular button: */		
+button.defaultBtn {
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat right -100px;
+	}
+	
+button.defaultBtn span { 
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat left top;
+	}
+	
+/* OPTIONAL BUTTON STYLES alt button: */		
+button.altBtn { 
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat right -100px;
+	}
+	
+button.altBtn span { 
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat left top;
+	}
+	
+/* OPTIONAL BUTTON STYLES modal button: */		
+button.modalBtn { 
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat right -50px;
+	}
+	
+button.modalBtn span { 
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat left top;
+	}
+	
+/* OPTIONAL BUTTON STYLES modal alt button: */		
+button.altModalBtn { 
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat right -50px;
+	}
+	
+button.altModalBtn span { 
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat left top;
+	}
+	
+/* OPTIONAL BUTTON STYLES large button: */		
+button.largeBtn {
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat right -100px;
+	}
+	
+button.largeBtn span {
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat left top;
+	}
+
+/* OPTIONAL BUTTON STYLES large button: */		
+button.altLargeBtn { 
+	background: transparent url(../images/buttons/btn_large_alt_sprite.gif) no-repeat right -100px;
+	}
+	
+button.altLargeBtn span { 
+	background: transparent url(../images/buttons/btn_large_alt_sprite.gif) no-repeat left top;
+	}
+
+
+/* REQUIRED LINK BUTTON STYLES: */
+
+/* Link Button Normal */
+a.linkBtn { 
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat right -100px;
+	}
+	
+a.linkBtn span { 
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat left top;
+	}
+
+/* Link ALT Button Normal */
+a.linkAltBtn {  
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat right -100px;
+	}
+	
+a.linkAltBtn span { 
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat left top;
+	}
+	
+/* Modal Link Button Normal */
+a.modalLinkBtn { 
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat right -50px;
+	}
+	
+a.modalLinkBtn span { 
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat left top;
+	}
+	
+/* Modal Link ALT Button Normal */
+a.modalLinkAltBtn { 
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat right -50px;
+	}
+	
+a.modalLinkAltBtn span { 
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat left top;
+	}
+	
+/* Link Button Large */
+a.largeLinkBtn { 
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat right -100px;
+	}
+	
+a.largeLinkBtn span { 
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat left top;
+	}
+
+/*   ===================================================================================================                                                                
+
+     9. Footer
+	 
+======================================================================================================== */
+
+#footer { 
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 1.5em 0;
+	width: 930px;
+	}
+	
+	#footerLegal { 
+		color: #999;
+		float: left;
+		}
+		
+		#footerLegal ul { 
+			list-style: none;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			}
+			
+			#footerLegal ul li { 
+				float: left;
+				margin: 0;
+				padding: 0;
+				}
+				
+				#footerLegal ul li a { 
+					color: #666;
+					display: inline-block;
+					font-size: 0.917em;
+					margin: 0;
+					padding-right: 10px;
+					position: relative;
+					text-decoration: none;
+					}
+					
+				#footerLegal ul li a:hover { 
+					color: #333 
+					}
+					
+		#footerLegal p { 
+			clear: both;
+			font-size: 0.917em;
+			}
+		
+	#footerAuthor { 
+		color: #ccc;
+		float: right;
+		text-align: right;
+		}
+		
+		#footerAuthor a { 
+			color: #ccc;
+			}
+		
+		#footerAuthor a:hover { 
+			color: #666;
+			}
+		
+		#footerAuthor p{ 
+			font-size: 0.917em;
+			}
+
+/*   ===================================================================================================                                                                
+
+     10. Clear Fix
+
+======================================================================================================== */
+
+.group:before, .group:after {
+	content:"";
+	display:table;
+	}
+
+.group:after {
+	clear:both;
+	}
+
+.group {
+	zoom:1; /* For IE 6/7 (trigger hasLayout) */
+	}
+
+/*   ===================================================================================================                                                                
+
+     11. Vin65 Overrides
+
+======================================================================================================== */
+
+/* -----Modal Cart----- */
+a#v65-toggleModalCart { 
+	display: block;
+	}
