@@ -1,4 +1,4 @@
-<cfoutput> 
+<cfoutput>
 <!DOCTYPE html>
 <html>
 <head>
