@@ -674,3 +674,19 @@ a.largeLinkBtn span {
 a#v65-toggleModalCart { 
 	display: block;
 	}
+	
+#v65-fieldset-paymentMethod{
+	float:left;
+	width:400px;
+	}
+
+form#v65-checkBilling .v65-additionalComments {
+	float:none;
+	margin-left:10px;
+	padding:15px 0 0;
+	width:390px;
+	}
+
+#v65-signUpClubSummaryWrapper {
+	margin-bottom: 20px;
+	}
