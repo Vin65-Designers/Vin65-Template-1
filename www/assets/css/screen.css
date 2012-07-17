@@ -205,7 +205,8 @@ hr {
 	z-index: 101;
 	}
 	
-	#topMenu ul { 
+	#topMenu ul {
+		float:right;
 		padding: 0;
 		position: relative;
 		list-style: none;
