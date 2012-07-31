@@ -62,4 +62,57 @@ function showSlider() {
 	
 }
 
+/*
+	var galleryId = so.variables.photogalleryid
+	var galleryHeight = so.attributes.height - 25;
+	var galleryWidth = so.attributes.width;
+	
+	$('#pagePhotoGallery').html('').attr("style",'height:'+galleryHeight+'px; width:'+galleryWidth+'px; overflow:hidden;');
+	$("#pagePhotoGallery img").css("display","none");
+	
+	$.ajax({
+    	type: "GET",
+        url: "/index.cfm?method=pages.showPhotoGalleryXML&photogalleryid="+galleryId+"&random=1303250264962.93", // replace with absolute URL of your gallery's xml file
+        dataType: "xml",
+        success: function(xml) {
+			$(xml).find('img').each(function() {
+			   var location = '/assets/images/photogallery/images/large/';
+			   var photo = $(this).attr('src');
+			   var alt = $(this).attr('caption');
+			   var url = $(this).attr('link');
+				//$('<li></li>').html('<a href="'+location+''+url+'"><img src="'+location+''+url+'" alt="'+alt+'"/></a>').appendTo('#photogallery');
+				if (url == undefined) 
+					{
+						$('#pagePhotoGallery').append('<img src="'+location+''+photo+'" alt="'+alt+'"/>');
+					}
+				else
+					{
+						$('#pagePhotoGallery').append('<a href="'+url+'"><img src="'+location+''+photo+'" alt="'+alt+'"/></a>');	
+					}
+			});
+
+		}
+
+   	});
+	
+	setTimeout ( "showSlider()", 1000 );
+});
+
+function showSlider() {
+	
+	$('#pagePhotoGallery').nivoSlider({
+		effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
+		slices:15, // For slice animations
+		animSpeed:500, // Slide transition speed
+		pauseTime:5000, // How long each slide will show
+		startSlide:0, // Set starting Slide (0 index)
+		directionNav:true, // Next & Prev navigation
+		directionNavHide:true, // Only show on hover
+		controlNav:true // 1,2,3... navigation
+	});
+	
+}
+
+*/
+
 
