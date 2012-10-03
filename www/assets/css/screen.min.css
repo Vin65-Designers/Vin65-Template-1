@@ -119,8 +119,7 @@ hr {
 	.logo { 
 		float: left;
 		height: 160px;
-		overflow: hidden;
-		width: 350px;
+		width: 240px;
 	}
 		
 /*   ===================================================================================================
@@ -131,22 +130,23 @@ hr {
 	float: right;
 	font-size: 13px;
 	height: 24px;
-	margin: 80px 0 30px 0;
+	margin: 80px 0 30px;
 	position: relative;
-	width: 600px;
+	width: 640px;
 	z-index: 101;
 }
 	
-	.mainMenu ul { 
-		padding: 0;
-		position: relative;
+	.mainMenu ul {
 		list-style: none;
 		margin: 0;
+		float: right;
+		padding: 0;
+		position: relative;
 	}
 
 	.mainMenu ul li { 
 		float: left;
-		margin: 0 55px 0 0;
+		margin: 0 0 0 55px;
 		padding: 0;
 		position: relative;
 	}
@@ -186,7 +186,8 @@ hr {
 		.mainMenu li ul li { 
 			background-color: #fff;
 			display: block;
-			float: none;				
+			float: none;
+			margin: 0;		
 			text-align: left;
 			width: 180px;
 		}		
@@ -204,19 +205,16 @@ hr {
 			text-transform: none;
 			width: 170px;
 		}
-
-		.mainMenu li ul li a.v65-pageAParent { 
-			color: #000;
-		}
-			
+		
 		.mainMenu li ul li a:hover { 
 			color: #000;	
 		}
 		
 		.mainMenu li.v65-home {  } 
 		
-		.mainMenu li a.v65-pageAParent { 
+		.mainMenu a.v65-pageAParent { 
 			color: #000;
+			font-weight: bold;
 		}
 		
 		.mainMenu li a.v65-selected { 
@@ -280,6 +278,7 @@ hr {
 		
 	#slider { 
 		height: 350px;
+		overflow: hidden;
 		width: 950px;
 	}
 		
@@ -296,7 +295,7 @@ hr {
 			width: 470px;
 		}
 			
-		.homepagePod { 
+		.homepageProductGroup { 
 			border-left: 1px solid #ccc;
 			float: left;
 			margin: 85px 0 20px;
@@ -546,3 +545,38 @@ form#v65-checkBilling .v65-additionalComments {
 #v65-signUpClubSummaryWrapper {
 	margin-bottom: 20px;
 }
+
+/*-----Homepage Product Group-----*/
+
+.homepageProductGroup .v65-productGroup-products{
+	text-align: left;
+	width: 100%;
+}
+
+	.homepageProductGroup .v65-productGroup-title{
+		color: #333;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 26px;
+		line-height: 1.2;
+		margin: 0.25em  0 0.5em;
+	}
+
+	.homepageProductGroup .v65-productGroup-teaser{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.homepageProductGroup .v65-productGroup-product{
+		margin: 0 0 1em;
+		width: 100%;
+	}
+
+		.homepageProductGroup .v65-product-photo{
+			float: left;
+			width: auto;
+		}
+
+		.homepageProductGroup .v65-productGroup-product .v65-product-addToCart-priceWrapper{
+			display: inline;
+		}

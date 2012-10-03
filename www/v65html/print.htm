@@ -8,32 +8,29 @@
 	<link rel="Shortcut Icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
 	
-    <!--//Vin65 QuickLaunch//-->
-    <script type="text/javascript">
-          var qlCode='vin65template1:vin65cloud';
-          var qlLayoutType='Page';
-          var pageTitle='Print';
-    </script>
-    <script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
-    <!--//Vin65 QuickLaunch//-->
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript">
+		var qlCode='vin65template1:vin65cloud';
+		var qlLayoutType='Page';
+		var pageTitle='Print';
+	</script>
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<!--//Vin65 QuickLaunch//-->
 	
-	<v65:css files="/assets/css/screen.css" media="screen"></v65:css>
-	<!--[if IE 7]><v65:css files="/assets/css/ie7.css" media="screen"></v65:css><![endif]-->
-	<!--[if IE 8]><v65:css files="/assets/css/ie8.css" media="screen"></v65:css><![endif]-->
-	
+	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css"></v65:css>
+	<!--[if IE 7]><v65:css files="/assets/css/ie7.css"></v65:css><![endif]-->
+
 </head>
-<body id="printBody">
+<body class="printBody">
 
-	<div id="printWrapper">
-	
-		<div id="printHeader"><img src="../assets/images/email/header.gif" alt="<v65:websiteName></v65:websiteName>" width="700" height="150"></div>
+	<div class="printWrapper">
+		<div class="printHeader"><img src="../assets/images/email/header.gif" alt="<v65:websiteName></v65:websiteName>" width="700" height="150"></div>
 		
-		<div id="printContent">
+		<div class="printContent">
 			<v65:mainContent></v65:mainContent>
-		</div>
+		</div>	
+	</div>
 	
-	</div>	
-
 	<!--//Vin65 QuickLaunchFooter//-->
 	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>     
 	<!--//Vin65 QuickLaunchFooter//-->

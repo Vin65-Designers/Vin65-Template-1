@@ -8,69 +8,62 @@
 	<link rel="Shortcut Icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
     
-    <!--//Vin65 QuickLaunch//-->
-    <script type="text/javascript">
-          var qlCode='vin65template1:vin65cloud';
-          var qlLayoutType='BlogList';
-    </script>
-    <script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
-    <!--//Vin65 QuickLaunch//-->
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript">
+	     var qlCode='vin65template1:vin65cloud';
+	     var qlLayoutType='BlogList';
+	</script>
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<!--//Vin65 QuickLaunch//-->
 	
-	<v65:css files="/assets/css/screen.css" media="screen"></v65:css>
-	<!--[if IE 7]><v65:css files="/assets/css/ie7.css" media="screen"></v65:css><![endif]-->
-	<!--[if IE 8]><v65:css files="/assets/css/ie8.css" media="screen"></v65:css><![endif]-->
+	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js"></v65:js>
 	
-	<v65:js files="/assets/js/swfobject.js,/assets/js/scripts.js"></v65:js>
+	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css"></v65:css>
+	<!--[if IE 7]><v65:css files="/assets/css/ie7.css"></v65:css><![endif]-->
 
 	<v65:rssFeed></v65:rssFeed>
 	
 </head>
 <body>
 
-<div id="container">
+<div class="wrapper v65-group">
 
-	<!--Header-->
-	<div id="header">
+	<!--header-->
+	<div class="header">
 		
-		<!--Logo-->
-		<div id="logo"><a href="/" accesskey="h"><img src="../assets/images/logo.png" width="240" height="160" alt="<v65:websiteName></v65:websiteName>"></a></div>
-		<!--/Logo-->
+		<!--logo-->
+		<a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png" width="240" height="160" alt="<v65:websiteName></v65:websiteName>"></a>
+		<!--/logo-->
 		
-		<!--Menu-->
-		<div id="topMenu">
+		<!--mainMenu-->
+		<div class="mainMenu">
 			<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 		</div>
-		<!--/Menu-->
+		<!--/mainMenu-->
 		
-		<!--User Tools-->
-        <div id="user-toolsWrapper">
-            <div id="user-tools">
-                
-                <v65:modalCart></v65:modalCart>	
-                <v65:login></v65:login>	
-                
-            </div>
-        </div>
-        <!--User Tools-->
+		<!--user-tools-->
+		<div id="user-tools">
+			<v65:modalCart></v65:modalCart>	
+			<v65:login></v65:login>	                
+		</div>
+		<!--/user-tools-->
 		
 	</div>
-	<!--/Header-->
+	<!--/header-->
 	
-	<!--Content-->
-	<div id="content">
+	<!--content-->
+	<div class="content v65-group">
 		
-		<!--Main Content-->
-		<div id="blogContent">
-			
+		<!--blogContent-->
+		<div class="blogContent">
 			<v65:mainContent></v65:mainContent>
-			
 		</div>
-		<!--/Main Content-->
+		<!--/blogContent-->
 		
-		<!--Blog Right-->
-		<div id="blogRightWrapper">
+		<!--blogRightWrapper-->
+		<div class="blogRightWrapper">
 		
-			<div id="blogRightWrapper-Col1">
+			<div class="blogFilterLeft">
 				<h5>Recent Posts</h5>
 				<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
 				
@@ -79,7 +72,7 @@
 								
 			</div>
 			
-			<div id="blogRightWrapper-Col2">
+			<div class="blogFilterRight">
 				
 				<h5>Blog Archives</h5>
 				<v65:blogArchives></v65:blogArchives>
@@ -90,22 +83,18 @@
 			</div>
 			
 		</div>
-		<!--/Blog Right-->		
+		<!--/blogRightWrapper-->		
 		
 	</div>
-	<!--/Content-->
+	<!--/content-->
 	
-	<!--Footer-->
-	<div id="footer">
-		<div id="footerLegal">
-			<v65:layoutFooterNav></v65:layoutFooterNav>
-			<p><v65:copyright></v65:copyright></p>
-		</div>
-		<div id="footerAuthor">
-			<p><v65:vin65Accolade></v65:vin65Accolade></p>
-		</div>
+	<!--footer-->
+	<div class="footer">
+		<v65:layoutFooterNav></v65:layoutFooterNav>
+		<p><v65:copyright></v65:copyright></p>
+		<p class="accolade"><v65:vin65Accolade></v65:vin65Accolade></p>
 	</div>
-	<!--/Footer-->
+	<!--/footer-->
 	
 </div>
 

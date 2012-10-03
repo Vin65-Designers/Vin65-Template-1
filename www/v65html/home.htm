@@ -6,88 +6,75 @@
 	
 	<v65:metaTags></v65:metaTags>
     
-    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
         
-    <!--//Vin65 QuickLaunch//-->
-    <script type="text/javascript">
-          var qlCode='vin65template1:vin65cloud';
-          var qlLayoutType='Homepage';
-    </script>
-    <script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
-    <!--//Vin65 QuickLaunch//-->
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript">
+		var qlCode='vin65template1:vin65cloud';
+		var qlLayoutType='Homepage';
+	</script>
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<!--//Vin65 QuickLaunch//-->
 	
-	<v65:css files="/assets/css/screen.css,/assets/nivo/nivo-slider.css" media="screen"></v65:css>
-	<!--[if IE 7]><v65:css files="/assets/css/ie7.css" media="screen"></v65:css><![endif]-->
-	<!--[if IE 8]><v65:css files="/assets/css/ie8.css" media="screen"></v65:css><![endif]-->
+	<v65:js files="/assets/js/scripts-homepage.js,/assets/nivo/jquery.nivo.slider.pack.js"></v65:js>
 	
-	<v65:js files="/assets/js/swfobject.js,/assets/js/scripts-homepage.js,/assets/nivo/jquery.nivo.slider.pack.js"></v65:js>
+	<v65:css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css"></v65:css>
+	<!--[if IE 7]><v65:css files="/assets/css/ie7.css"></v65:css><![endif]-->
 	
 </head>
 <body>
 
-<div id="container">
+<div class="wrapper v65-group">
 
-	<!--Header-->
-	<div id="header">
+	<!--header-->
+	<div class="header">
 		
-		<!--Logo-->
-		<div id="logo"><a href="/" accesskey="h"><img src="../assets/images/logo.png" width="240" height="160" alt="<v65:websiteName></v65:websiteName>"></a></div>
-		<!--/Logo-->
+		<!--logo-->
+		<a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png" width="240" height="160" alt="<v65:websiteName></v65:websiteName>"></a>
+		<!--/logo-->
 		
-		<!--Menu-->
-		<div id="topMenu">
+		<!--mainMenu-->
+		<div class="mainMenu">
 			<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 		</div>
-		<!--/Menu-->
+		<!--/mainMenu-->
 		
-		<!--User Tools-->
-		<div id="user-toolsWrapper">
-			<div id="user-tools">
-            
-				<v65:modalCart></v65:modalCart>
-				<v65:login></v65:login>
-			
-			</div>
-			
+		<!--user-tools-->
+		<div id="user-tools">
+			<v65:modalCart></v65:modalCart>	
+			<v65:login></v65:login>
 		</div>
-		<!--User Tools-->
+		<!--/user-tools-->
 		
 	</div>
-	<!--/Header-->
+	<!--/header-->
 	
-	<!--Content-->
-	<div id="homepageContent">
-		
-		<div id="slider" class="nivoSlider">
-			<!--<img src="../assets/images/temp/feature.jpg" width="950" height="350">-->
-		</div>
-		
-		<div id="homepageText">
+	<!--homepageContent-->
+	<div class="homepageContent v65-group">
+	
+		<div id="slider"></div>
+				
+		<div class="homepageText">
 			<v65:mainContent></v65:mainContent>
-        </div>
+		</div>
 		
-		<div id="homepagePod">
-			<v65:pods location="Homepage Pod Right"></v65:pods>
+		<div class="homepageProductGroup">
+			<v65:product:group code="HomepageProductGroup"></v65:product:group>
 		</div>
 		
 	</div>
-	<!--/Content-->
+	<!--/homepageContent-->
 	
-	<!--Footer-->
-	<div id="footer">
-		<div id="footerLegal">
-			<v65:layoutFooterNav></v65:layoutFooterNav>
-			<p><v65:copyright></v65:copyright>. All rights reserved.</p>
-		</div>
-		<div id="footerAuthor">
-			<v65:vin65Accolade></v65:vin65Accolade>
-		</div>
+	<!--footer-->
+	<div class="footer">
+		<v65:layoutFooterNav></v65:layoutFooterNav>
+		<p><v65:copyright></v65:copyright></p>
+		<p class="accolade"><v65:vin65Accolade></v65:vin65Accolade></p>
 	</div>
-	<!--/Footer-->
+	<!--/footer-->
 	
 </div>
-
 
 <!--//Vin65 QuickLaunchFooter//-->
 <script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>     

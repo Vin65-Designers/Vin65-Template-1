@@ -1,20 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function() {
-	
-	$("#topMenu ul li:last-child").css("margin-right", "0");
-	$("#footerLegal ul li:last-child").css("margin-right", "0").css("border-right", "0");
-	
-	$("#topMenu ul li ul li").hover(
-	  function () {
-		  //alert("here");
-		$(this).parent().parent().children("a").addClass("hover");
-	  }, 
-	  function () {
-		$(this).parent().parent().children("a").removeClass("hover");
-	  }
-	);
-	
+		
 	//Homepage Photogallery Connector
 	$('#slider').html('');
 	var galleryId = "faeca5fe-2264-112b-b112-de10559a1183";	//	TEMPLATE ONE PHOTOGALLERY ID	//
@@ -47,8 +34,7 @@ $(document).ready(function() {
 	
 });
 
-function showSlider() {
-	
+function showSlider() {	
 	$('#slider').nivoSlider({
 		effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
 		slices:15, // For slice animations
@@ -58,8 +44,7 @@ function showSlider() {
 		directionNav:true, // Next & Prev navigation
 		directionNavHide:true, // Only show on hover
 		controlNav:true // 1,2,3... navigation
-	});
-	
+	});	
 }
 
 /*
