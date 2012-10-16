@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	//Homepage Photogallery Connector
 	$('#slider').html('');
-	var galleryId = "faeca5fe-2264-112b-b112-de10559a1183";	//	TEMPLATE ONE PHOTOGALLERY ID	//
+	var galleryId = "faeca5fe-2264-112b-b112-de10559a1181";	//	TEMPLATE ONE PHOTOGALLERY ID	//
 	$.ajax({
     		type: "GET",
 		url: "/index.cfm?method=pages.showPhotoGalleryXML&photogalleryid="+galleryId+"&random=1303250264962.93",
