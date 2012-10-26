@@ -1,11 +1,12 @@
 // JavaScript Document
-$(document).ready(function() {
+$(document).ready(function() {	
 	//Homepage Photogallery Connector
 	$('#slider').html('');
-	var galleryId = "faeca5fe-2264-112b-b112-de10559a1181";	//	TEMPLATE ONE PHOTOGALLERY ID	//
+	var galleryId = "faeca5fe-2264-112b-b112-de10559a1183";	//	TEMPLATE ONE PHOTOGALLERY ID	//
+	var timestamp = "&timestamp="+ new Date().getTime();
 	$.ajax({
     		type: "GET",
-		url: "/index.cfm?method=pages.showPhotoGalleryXML&photogalleryid="+galleryId+"&random=1303250264962.93",
+		url: "/index.cfm?method=pages.showPhotoGalleryXML&photogalleryid="+galleryId+timestamp,
 		dataType: "xml",
 		success: function(xml) {
 			$(xml).find('img').each(function() {
