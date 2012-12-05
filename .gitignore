@@ -40,3 +40,8 @@ parsed/
 ###
 
 settings.ini
+
+###
+#   SCSS Files
+###
+.sass-cache/*
