@@ -31,68 +31,84 @@ body {
   font-size: 12px;
   color: #666666;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
 a {
   color: #900;
-  text-decoration: none; }
+  text-decoration: none;
+}
 a:hover, a:focus, a:active {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 h1, h2, h3, h4, h5, h6, p, table, ul, ol {
   margin-top: 0;
-  padding-top: 0; }
+  padding-top: 0;
+}
 
 ul, ol, dl, p, table, pre {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
-  margin: 0; }
+  margin: 0;
+}
 
 h1 {
   font-size: 32px;
   line-height: 1.2;
-  margin-bottom: 0.6em; }
+  margin-bottom: 0.6em;
+}
 
 h2 {
   font-size: 26px;
   line-height: 1.2;
-  margin: 0.25em  0 0.5em; }
+  margin: 0.25em  0 0.5em;
+}
 
 h3 {
   font-size: 22px;
   line-height: 1.2;
-  margin-bottom: 0.6em; }
+  margin-bottom: 0.6em;
+}
 
 h4 {
   font-size: 18px;
-  line-height: 1.2; }
+  line-height: 1.2;
+}
 
 h5 {
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 h6 {
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 img {
-  border: none; }
+  border: none;
+}
 
 form {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 legend {
-  color: #111; }
+  color: #111;
+}
 
 hr {
   background-color: #666;
   border: 0;
   color: #666;
-  height: 1px; }
+  height: 1px;
+}
 
 /*   ===================================================================================================
      2. Header
@@ -102,11 +118,13 @@ hr {
   margin-bottom: 1em;
   position: relative;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+}
 
 .logo {
   display: block;
-  float: left; }
+  float: left;
+}
 
 /*   ===================================================================================================
      3. Navigation
@@ -119,18 +137,21 @@ hr {
   margin: 80px 0 30px;
   position: relative;
   width: 640px;
-  z-index: 101; }
+  z-index: 101;
+}
 .mainMenu ul {
   list-style: none;
   margin: 0;
   float: right;
   padding: 0;
-  position: relative; }
+  position: relative;
+}
 .mainMenu li {
   float: left;
   margin: 0 0 0 55px;
   padding: 0;
-  position: relative; }
+  position: relative;
+}
 .mainMenu li a {
   color: #333333;
   display: inline-block;
@@ -139,26 +160,31 @@ hr {
   margin: 0;
   padding: 0;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+}
 .mainMenu li a:hover {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+}
 .mainMenu li:hover ul {
   border: 1px solid #ccc;
   display: block;
-  font-size: 12px; }
+  font-size: 12px;
+}
 .mainMenu li ul {
   display: none;
   left: -10px;
   position: absolute;
   top: 32px;
-  width: 180px; }
+  width: 180px;
+}
 .mainMenu li li {
   display: block;
   float: none;
   margin: 0;
   text-align: left;
-  width: 180px; }
+  width: 180px;
+}
 .mainMenu li li a {
   background-color: #fff;
   color: #666;
@@ -170,14 +196,18 @@ hr {
   padding: 0 0 0 10px;
   text-align: left;
   text-transform: none;
-  width: 170px; }
+  width: 170px;
+}
 .mainMenu li li a:hover {
-  color: #000; }
+  color: #000;
+}
 .mainMenu .v65-pageAParent {
-  color: black; }
+  color: black;
+}
 .mainMenu .v65-selected {
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* ----- b. Sub Menu ----- */
 .subMenu {
@@ -185,23 +215,29 @@ hr {
   float: left;
   margin: 60px 40px 0 0;
   padding-right: 20px;
-  width: 170px; }
+  width: 170px;
+}
 .subMenu ul {
   font-size: 11px;
   list-style: none;
   margin: 0 0 1em 10px;
   padding: 0;
-  width: 160px; }
+  width: 160px;
+}
 .subMenu li {
-  line-height: 2; }
+  line-height: 2;
+}
 .subMenu li ul {
   margin-left: 10px;
-  width: 160px; }
+  width: 160px;
+}
 .subMenu .v65-pageAParent {
-  color: #000; }
+  color: #000;
+}
 .subMenu .v65-leftSelected {
   color: #000;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /*   ===================================================================================================
      4. Content
@@ -209,41 +245,48 @@ hr {
 .wrapper {
   margin: 0 auto;
   position: relative;
-  width: 950px; }
+  width: 950px;
+}
 
 /* ----- a. Homepage Styles ----- */
 .homepageContent {
   background: #fff;
   box-shadow: 0 0 20px #999999;
-  behavior: url(/assets/css/PIE.htc); }
+  behavior: url(/assets/css/PIE.htc);
+}
 
 .homepageText {
   float: left;
   margin-bottom: 20px;
   padding: 30px 30px 30px 20px;
-  width: 470px; }
+  width: 470px;
+}
 
 .homepageProductGroup {
   border-left: 1px solid #ccc;
   float: left;
   margin: 85px 0 20px;
   padding: 0 0 30px 20px;
-  width: 400px; }
+  width: 400px;
+}
 
 #slider {
   height: 350px;
   overflow: hidden;
-  width: 950px; }
+  width: 950px;
+}
 
 /* ----- b. Page Styles ----- */
 .content {
   background: #fff;
   box-shadow: 0 0 20px #999999;
-  padding: 30px; }
+  padding: 30px;
+}
 
 .pageContent {
   float: left;
-  width: 650px; }
+  width: 650px;
+}
 
 /*   ===================================================================================================
      5. Blog Template
@@ -251,28 +294,34 @@ hr {
 .blogContent {
   float: left;
   padding: 20px 25px 0 0;
-  width: 520px; }
+  width: 520px;
+}
 
 .blogRightWrapper {
   float: right;
   padding-top: 20px;
-  width: 325px; }
+  width: 325px;
+}
 .blogRightWrapper ul {
   list-style: none;
   margin: 0 0 1em;
-  padding: 0; }
+  padding: 0;
+}
 .blogRightWrapper li {
   font-size: 11px;
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 10px;
+}
 
 .blogFilterLeft {
   float: left;
   padding: 0 25px 0 0;
-  width: 150px; }
+  width: 150px;
+}
 
 .blogFilterRight {
   float: left;
-  width: 150px; }
+  width: 150px;
+}
 
 /*   ===================================================================================================
      6. Print Template
@@ -281,70 +330,126 @@ hr {
   background-color: #fff;
   background-image: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .printWrapper {
   margin: 0 auto;
-  width: 700px; }
+  width: 700px;
+}
 
 .printHeader {
   height: 150px;
-  width: 700px; }
+  width: 700px;
+}
 
 .printContent {
   text-align: left;
-  width: 700px; }
+  width: 700px;
+}
 
 /*   ===================================================================================================
      7. Buttons
 ======================================================================================================== */
-button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #336699;
-  border-radius: 5px;
-  behavior: url(/assets/css/PIE.htc); }
-button.defaultBtn span, button.modalBtn span, button.largeBtn span {
-  background: #336699;
-  border-radius: 5px;
-  behavior: url(/assets/css/PIE.htc); }
-button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
-  background: #6699cc; }
-button.defaultBtn:hover span, button.modalBtn:hover span, button.largeBtn:hover span {
-  background: #6699cc; }
-button.altBtn, button.altModalBtn, button.altLargeBtn {
-  background: #7c7c7c;
-  border-radius: 5px;
-  behavior: url(/assets/css/PIE.htc); }
-button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
-  background: #7c7c7c;
-  border-radius: 5px;
-  behavior: url(/assets/css/PIE.htc); }
-button.altBtn:hover, button.altModalBtn:hover, button.altLargeBtn:hover {
-  background: #afafaf; }
-button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hover span {
-  background: #afafaf; }
+/* OPTIONAL BUTTON STYLES regular button: */
+button.defaultBtn {
+  background: transparent url(../images/buttons/btn_sprite.gif) no-repeat right -100px;
+}
 
-a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
-  background: #336699;
-  border-radius: 5px;
-  behavior: url(/assets/css/PIE.htc); }
-a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
-  background: #336699;
-  border-radius: 5px;
-  behavior: url(/assets/css/PIE.htc); }
-a.linkBtn:hover, a.modalLinkBtn:hover, a.largeLinkBtn:hover {
-  background: #6699cc; }
-a.linkBtn:hover span, a.modalLinkBtn:hover span, a.largeLinkBtn:hover span {
-  background: #6699cc; }
-a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
-  background: #7c7c7c;
-  border-radius: 5px; }
-a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
-  background: #7c7c7c;
-  border-radius: 5px; }
-a.linkAltBtn:hover, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:hover {
-  background: #afafaf; }
-a.linkAltBtn:hover span, a.modalLinkAltBtn:hover span, a.modalLinkAltBtn:hover span {
-  background: #afafaf; }
+button.defaultBtn span {
+  background: transparent url(../images/buttons/btn_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES alt button: */
+button.altBtn {
+  background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat right -100px;
+}
+
+button.altBtn span {
+  background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES modal button: */
+button.modalBtn {
+  background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat right -50px;
+}
+
+button.modalBtn span {
+  background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES modal alt button: */
+button.altModalBtn {
+  background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat right -50px;
+}
+
+button.altModalBtn span {
+  background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES large button: */
+button.largeBtn {
+  background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat right -100px;
+}
+
+button.largeBtn span {
+  background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES large button: */
+button.altLargeBtn {
+  background: transparent url(../images/buttons/btn_large_alt_sprite.gif) no-repeat right -100px;
+}
+
+button.altLargeBtn span {
+  background: transparent url(../images/buttons/btn_large_alt_sprite.gif) no-repeat left top;
+}
+
+/* REQUIRED LINK BUTTON STYLES: */
+/* Link Button Normal */
+a.linkBtn {
+  background: transparent url(../images/buttons/btn_sprite.gif) no-repeat right -100px;
+}
+
+a.linkBtn span {
+  background: transparent url(../images/buttons/btn_sprite.gif) no-repeat left top;
+}
+
+/* Link ALT Button Normal */
+a.linkAltBtn {
+  background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat right -100px;
+}
+
+a.linkAltBtn span {
+  background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat left top;
+}
+
+/* Modal Link Button Normal */
+a.modalLinkBtn {
+  background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat right -50px;
+}
+
+a.modalLinkBtn span {
+  background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat left top;
+}
+
+/* Modal Link ALT Button Normal */
+a.modalLinkAltBtn {
+  background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat right -50px;
+}
+
+a.modalLinkAltBtn span {
+  background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat left top;
+}
+
+/* Link Button Large */
+a.largeLinkBtn {
+  background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat right -100px;
+}
+
+a.largeLinkBtn span {
+  background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat left top;
+}
 
 /*   ===================================================================================================
      8. Footer
@@ -353,70 +458,87 @@ a.linkAltBtn:hover span, a.modalLinkAltBtn:hover span, a.modalLinkAltBtn:hover s
   color: #333333;
   padding: 1.5em 0;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 .footer ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 .footer li {
   display: inline;
-  padding: 0 5px; }
+  padding: 0 5px;
+}
 .footer li a {
   color: #333333;
   display: inline-block;
   font-size: 0.917em;
-  position: relative; }
+  position: relative;
+}
 .footer li a:hover {
-  color: black; }
+  color: black;
+}
 .footer .acolade {
-  font-size: 0.917em; }
+  font-size: 0.917em;
+}
 .footer a {
-  color: #333333; }
+  color: #333333;
+}
 
 /*   ===================================================================================================
      9. Vin65 Overrides
 ======================================================================================================== */
 /* ----- a. User Tools ----- */
 #user-tools a {
-  color: #333333; }
+  color: #333333;
+}
 
 /* ----- b. Homepage Product Group ----- */
 .homepageProductGroup .v65-productGroup-products {
   text-align: left;
-  width: 100%; }
+  width: 100%;
+}
 
 .homepageProductGroup .v65-productGroup-title {
   color: #333333;
   font-family: "Times New Roman", Times, serif;
   font-size: 26px;
   line-height: 1.2;
-  margin: 0.25em  0 0.5em; }
+  margin: 0.25em  0 0.5em;
+}
 
 .homepageProductGroup .v65-productGroup-teaser {
   float: none;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .homepageProductGroup .v65-productGroup-product {
   margin: 0 0 1em;
-  width: 100%; }
+  width: 100%;
+}
 
 .homepageProductGroup .v65-product-photo {
   float: left;
-  width: auto; }
+  width: auto;
+}
 
 .homepageProductGroup .v65-productGroup-product .v65-product-addToCart-priceWrapper {
-  display: inline; }
+  display: inline;
+}
 
 /* ----- c. Checkout Overrides ----- */
 #v65-fieldset-paymentMethod {
   float: left;
-  width: 400px; }
+  width: 400px;
+}
 
 form#v65-checkBilling .v65-additionalComments {
   float: none;
   margin-left: 10px;
   padding: 15px 0 0;
-  width: 390px; }
+  width: 390px;
+}
 
 #v65-signUpClubSummaryWrapper {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}

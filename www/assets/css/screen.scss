@@ -491,77 +491,177 @@ hr {
      7. Buttons
 ======================================================================================================== */
 
-
-button{
-	&.defaultBtn,  &.modalBtn,  &.largeBtn{
-		background:$mainButtonColor;
-		border-radius:5px;
-		behavior: $pie;
-		span{
-			background:$mainButtonColor;
-			border-radius:5px;
-			behavior: $pie;
-		}
-		&:hover{
-			background:lighten($mainButtonColor, 20%);
-			span{
-				background:lighten($mainButtonColor, 20%);
-			}
-		}
-	}
-
-	&.altBtn, &.altModalBtn, &.altLargeBtn{
-		background:$secondaryButtonColor;
-		border-radius:5px;
-		behavior: $pie;
-		span{
-			background:$secondaryButtonColor;
-			border-radius:5px;
-			behavior: $pie;
-		}
-		&:hover{
-			background: lighten($secondaryButtonColor, 20%);
-			span{
-				background: lighten($secondaryButtonColor, 20%);
-			}
-		}
-
-	}
+/* OPTIONAL BUTTON STYLES regular button: */
+button.defaultBtn {
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat right -100px;
 }
 
-a{
-	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn{
-		background:$mainButtonColor;
-		border-radius:5px;
-		behavior: $pie;
-		span{
-			background:$mainButtonColor;
-			border-radius:5px;
-			behavior: $pie;
-		}
-		&:hover{
-			background:lighten($mainButtonColor, 20%);
-			span{
-				background:lighten($mainButtonColor, 20%);
-			}
-		}
-	}
-
-	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
-		background:$secondaryButtonColor;
-		border-radius:5px;
-		span{
-			background:$secondaryButtonColor;
-			border-radius:5px;
-		}
-		&:hover{
-			background: lighten($secondaryButtonColor, 20%);
-			span{
-				background: lighten($secondaryButtonColor, 20%);
-			}
-		}
-	}
+button.defaultBtn span {
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat left top;
 }
+
+/* OPTIONAL BUTTON STYLES alt button: */
+button.altBtn {
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat right -100px;
+}
+
+button.altBtn span {
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES modal button: */
+button.modalBtn {
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat right -50px;
+}
+
+button.modalBtn span {
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES modal alt button: */
+button.altModalBtn {
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat right -50px;
+}
+
+button.altModalBtn span {
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES large button: */
+button.largeBtn {
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat right -100px;
+}
+
+button.largeBtn span {
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat left top;
+}
+
+/* OPTIONAL BUTTON STYLES large button: */
+button.altLargeBtn {
+	background: transparent url(../images/buttons/btn_large_alt_sprite.gif) no-repeat right -100px;
+}
+
+button.altLargeBtn span {
+	background: transparent url(../images/buttons/btn_large_alt_sprite.gif) no-repeat left top;
+}
+
+
+/* REQUIRED LINK BUTTON STYLES: */
+
+/* Link Button Normal */
+a.linkBtn {
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat right -100px;
+}
+
+a.linkBtn span {
+	background: transparent url(../images/buttons/btn_sprite.gif) no-repeat left top;
+}
+
+/* Link ALT Button Normal */
+a.linkAltBtn {
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat right -100px;
+}
+
+a.linkAltBtn span {
+	background: transparent url(../images/buttons/btn_alt_sprite.gif) no-repeat left top;
+}
+
+/* Modal Link Button Normal */
+a.modalLinkBtn {
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat right -50px;
+}
+
+a.modalLinkBtn span {
+	background: transparent url(../images/buttons/btn_modal_sprite.gif) no-repeat left top;
+}
+
+/* Modal Link ALT Button Normal */
+a.modalLinkAltBtn {
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat right -50px;
+}
+
+a.modalLinkAltBtn span {
+	background: transparent url(../images/buttons/btn_modal_alt_sprite.gif) no-repeat left top;
+}
+
+/* Link Button Large */
+a.largeLinkBtn {
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat right -100px;
+}
+
+a.largeLinkBtn span {
+	background: transparent url(../images/buttons/btn_large_sprite.gif) no-repeat left top;
+}
+
+// CSS3 Buttons, currently not in use.
+// button{
+// 	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+// 		background:$mainButtonColor;
+// 		border-radius:5px;
+// 		behavior: $pie;
+// 		padding:6px 8px;
+// 		span{
+// 			background:none;
+// 			padding:0;
+// 			margin:0;
+// 			height:auto;
+// 		}
+// 		&:hover{
+// 			background:lighten($mainButtonColor, 20%);
+// 		}
+// 	}
+
+// 	&.altBtn, &.altModalBtn, &.altLargeBtn{
+// 		background:$secondaryButtonColor;
+// 		border-radius:5px;
+// 		padding:6px 8px;
+// 		behavior: $pie;
+// 		span{
+// 			background:none;
+// 			padding:0;
+// 			margin:0;
+// 			height:auto;
+// 		}
+// 		&:hover{
+// 			background: lighten($secondaryButtonColor, 20%);
+// 		}
+
+// 	}
+// }
+
+// a{
+// 	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn{
+// 		background:$mainButtonColor;
+// 		border-radius: 5px;
+// 		padding:0px 6px;
+// 		behavior: $pie;
+// 		span{
+// 			background:none;
+// 			padding:0;
+// 			margin:0;
+// 			height:auto;
+// 		}
+// 		&:hover{
+// 			background:lighten($mainButtonColor, 20%);
+// 		}
+// 	}
+
+// 	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+// 		background:$secondaryButtonColor;
+// 		border-radius:5px;
+// 		padding:0px 6px;
+// 		behavior: $pie;
+// 		span{
+// 			background:none;
+// 			padding:0;
+// 			margin:0;
+// 			height:auto;
+// 		}
+// 		&:hover{
+// 			background: lighten($secondaryButtonColor, 20%);
+// 		}
+// 	}
+// }
 
 /*   ===================================================================================================
      8. Footer
