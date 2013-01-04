@@ -76,12 +76,12 @@ $(document).ready(function() {
 				$(xml).find('img').each(function() {
 					var location = '/assets/images/photogallery/images/large/',
 						photo = $(this).attr('src'),
-						alt = $(this).attr('caption'),
+						caption = $(this).attr('caption'),
 						url = $(this).attr('link');
 					if (url === undefined) {
-						images += '<img src="'+location+''+photo+'" alt="'+alt+'"/>';
+						images += '<img src="'+location+photo+'" title="'+caption+'"/>';
 					} else{
-						images += '<a href="'+url+'"><img src="'+location+''+photo+'" alt="'+alt+'"/></a>';
+						images += '<a href="'+url+'"><img src="'+location+photo+'" title="'+caption+'"/></a>';
 					}
 				});
 				gallery.append(images);
