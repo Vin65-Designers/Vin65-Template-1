@@ -1,18 +1,4 @@
 ###
-# ECLIPSE IDE project files
-##
-.project
-.cache
-.cache/*
-.settings
-.settings/*
-
-###
-# Dreamweaver
-###
-_notes
-
-###
 # system SWAP, TMP and BACKUP files
 ###
 *~
@@ -31,15 +17,14 @@ Thumbs.db
 *._
 
 ###
-# Fusebox
-###
-parsed/
-
-###
 # System
 ###
+_gsdata_
 
-settings.ini
+###
+# Sublime
+###
+sftp-config.json
 
 ###
 #   SCSS Files
