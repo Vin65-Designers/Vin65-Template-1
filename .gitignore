@@ -29,4 +29,4 @@ sftp-config.json
 ###
 #   SCSS Files
 ###
-.sass-cache/*
+.sass-cache/
