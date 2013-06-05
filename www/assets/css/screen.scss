@@ -1,8 +1,5 @@
 @charset "utf-8";
-@import "compass";
-@import url("../css/normalize.min.css");
-
-
+@import '_normalize.min.scss';
 
 /* CSS Document */
 /* This file includes PIE.htc (http://css3pie.com/) a script that lets CSS3 be used in IE6-9*/
@@ -156,7 +153,7 @@ ul, ol, dl, p, table, pre {
 	margin-bottom: 1em;
 }
 
-#{headings(1,6)}{
+h1,h2,h3,h4,h5,h6{
 	color: $headingFontColor;
 	font-family: $headingFontFamily;
 	font-weight: normal;
@@ -194,6 +191,11 @@ ul, ol, dl, p, table, pre {
 	h6 {
 		font-size: 14px;
 		line-height: 1.5;
+	}
+
+	.v65-title {
+		font-size: 1.6em;
+		margin-bottom: 1em;
 	}
 
 img{
@@ -763,170 +765,3 @@ form#v65-checkBilling .v65-additionalComments {
 #v65-signUpClubSummaryWrapper {
 	margin-bottom: 20px;
 }
-
-// d. Default SASS Product List
-.v65-product2Up{
-
-	.v65-product-title{
-		a{
-
-		}
-	}
-	.v65-product-photo{
-		a{
-			img{
-
-			}
-		}
-	}
-	.v65-product-teaser{
-		p{
-
-		}
-	}
-	.v65-product-drilldownLink{
-		a{
-
-		}
-	}
-	.v65-productreviewStats{
-
-	}
-	.v65-product-inventoryMessage{
-		.v65-product-inventoryMessage-inStock{
-
-		}
-	}
-	.v65-product-addToCart{
-		.v65-addToCart{
-			fieldset{
-				legend{}
-				.v65-product-addToCart-priceWrapper{
-					.v65-product-addToCart-price{
-
-					}
-					.v65-product-addToCart-unitDescription{
-
-					}
-					.v65-product-addToCart-productSKU{
-
-					}
-				}
-				.v65-product-addToCart-quantity{
-					input{
-
-					}
-				}
-				.v65-product-addToCart-button{
-					button{
-						span{
-
-						}
-					}
-				}
-			}
-		}
-		.v65-addToCartCase{
-
-		}
-	}
-	.v65-product-socialBar{
-
-	}
-}
-
-// e. Default SASS Product Drilldown
-.v65-productWrapper{
-	.v65-product-leftCol{
-		.v65-product-photo{
-			img{
-
-			}
-		}
-		.v65-productDrilldown-specs{
-			.v65-wine-specs{
-				.v65-wine-specs-title{
-
-				}
-				.v65-product-attribute{
-					.v65-product-attributeLabel{
-
-					}
-					.v65-product-attributeValue{
-
-					}
-				}
-			}
-		}
-	}
-	.v65-product-rightCol{
-		h1{
-
-		}
-		.v65-product-teaser{
-			p{
-
-			}
-		}
-		.v65-product-availability{
-			.v65-product-availability-inStock{
-
-			}
-		}
-		.v65-product-addToCart{
-
-			.v65-addToCart{
-
-				fieldset{
-					legend{}
-					.v65-product-addToCart-priceWrapper{
-						.v65-product-addToCart-price{
-
-						}
-						.v65-product-addToCart-unitDescription{
-						}
-						.v65-product-addToCart-productSKU{
-
-						}
-					}
-					.v65-product-addToCart-quantity{
-						input{
-
-						}
-					}
-					.v65-product-addToCart-button{
-						button{
-							span{
-
-							}
-						}
-					}
-				}
-			}
-			.v65-addToCartCase{
-
-			}
-		}
-		.v65-product-reviewStats{
-			a{
-
-			}
-		}
-		.v65-product-socialBar{
-
-		}
-		.v65-product-description{
-
-		}
-		.v65-product-reviews{
-			.v65-product-reviews-title{
-
-			}
-		}
-		.v65-ProductRating{
-
-		}
-	}
-}
-
-
